@@ -7,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Portela Decorações — Kits Pegue & Monte e montagem de festas para todas as ocasiões em São Bernardo do Campo.">
+        content="Portela Decorações — Kits Pegue & Monte e montagem completa para festas em São Bernardo do Campo.">
 
     <title>Portela Decorações | Transformando sonhos em festas</title>
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- Font Awesome para os ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
 
     <!-- JavaScript -->
     <script src="./js/script.js" defer></script>
@@ -33,30 +34,26 @@
 
     <!-- FAIXA SUPERIOR -->
 
-    <div class="faixa-superior">
-        <div class="faixa-conteudo">
+    <div class="top-bar">
+        <div class="container top-bar-content">
 
-            <p>
+            <span>
                 <i class="fa-solid fa-location-dot"></i>
 
                 Rua Simon Bolívar, 118 — Parque Imigrantes,
                 São Bernardo do Campo
-            </p>
+            </span>
 
-            <div class="redes-faixa">
+            <div class="top-bar-links">
 
-                <a href="https://www.instagram.com/portela.decoracoes/" target="_blank" rel="noopener"
-                    aria-label="Instagram da Portela Decorações">
+                <a href="https://www.instagram.com/portela.decoracoes/" target="_blank" rel="noopener">
                     <i class="fa-brands fa-instagram"></i>
-
                     @portela.decoracoes
                 </a>
 
-                <a href="https://wa.me/5511998115311" target="_blank" rel="noopener"
-                    aria-label="WhatsApp da Portela Decorações">
+                <a href="https://wa.me/5511998115311" target="_blank" rel="noopener">
                     <i class="fa-brands fa-whatsapp"></i>
-
-                    Fale conosco
+                    (11) 99811-5311
                 </a>
 
             </div>
@@ -66,52 +63,42 @@
 
     <!-- CABEÇALHO -->
 
-    <header class="cabecalho">
+    <header class="site-header">
+        <div class="container nav-container">
 
-        <div class="conteudo-cabecalho">
+            <a class="brand" href="#inicio" aria-label="Portela Decorações — início">
+                <img src="./assets/img/logo-portela.jpg" alt="Logo da Portela Decorações">
 
-            <a class="logo" href="#inicio">
-
-                <img src="./assets/img/logo-portela.jpg" alt="Logo Portela Decorações">
-
-                <div class="nome-empresa">
-                    <strong>Portela</strong>
-                    <span>Decorações</span>
-                </div>
-
+                <span class="brand-text">
+                    Portela
+                    <small>Decorações</small>
+                </span>
             </a>
 
 
-            <button class="botao-menu" id="botaoMenu" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
 
-            <nav class="menu-principal" id="menuPrincipal" aria-label="Navegação principal">
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
                 <a href="#inicio">Início</a>
-
                 <a href="#sobre">Sobre</a>
-
                 <a href="#servicos">Serviços</a>
-
                 <a href="#projetos">Projetos</a>
-
                 <a href="#localizacao">Localização</a>
-
                 <a href="#faq">Dúvidas</a>
             </nav>
 
 
-            <a class="botao-contato-cabecalho"
+            <a class="header-button"
                 href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento."
                 target="_blank" rel="noopener">
                 <i class="fa-brands fa-whatsapp"></i>
-
-                Solicitar orçamento
+                Pedir orçamento
             </a>
 
         </div>
-
     </header>
 
 
@@ -119,340 +106,733 @@
 
         <!-- CARROSSEL PRINCIPAL -->
 
-        <section class="carrossel" id="inicio" aria-label="Apresentação da Portela Decorações">
+        <section class="hero-section section-blue" id="inicio" aria-label="Apresentação da Portela Decorações">
+            <div class="container hero-container">
 
-            <div class="slides">
+                <div class="carousel hero-carousel" id="carousel">
 
-                <!-- SLIDE 1 -->
+                    <div class="carousel-track slides">
 
-                <article class="slide ativo">
+                        <!-- SLIDE 1 -->
 
-                    <img src="./assets/img/decoracao-1.jpg"
-                        alt="Decoração de festa realizada pela Portela Decorações">
+                        <article class="slide active">
 
-                    <div class="sombra-slide"></div>
+                            <img class="slide-image" src="./assets/img/decoracao-1.jpg"
+                                alt="Decoração infantil em azul e rosa feita pela Portela Decorações">
 
-                    <div class="conteudo-slide">
+                            <div class="slide-overlay"></div>
 
-                        <span class="destaque-slide">
-                            Desde 2016
-                        </span>
+                            <div class="container slide-content">
 
-                        <h1>
-                            Transformando sonhos
-                            <strong>em festas inesquecíveis.</strong>
-                        </h1>
+                                <span class="section-tag">
+                                    Transformando sonhos desde 2016
+                                </span>
 
-                        <p>
-                            Decorações feitas com carinho, criatividade
-                            e atenção a cada detalhe.
-                        </p>
+                                <h1>
+                                    Festas que viram
+                                    <span>memórias inesquecíveis.</span>
+                                </h1>
 
-                        <div class="botoes-slide">
+                                <p>
+                                    Decorações criadas com carinho, criatividade
+                                    e atenção a cada detalhe da sua comemoração.
+                                </p>
 
-                            <a class="botao-principal"
-                                href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento."
-                                target="_blank" rel="noopener">
-                                <i class="fa-brands fa-whatsapp"></i>
+                                <div class="slide-actions">
 
-                                Pedir orçamento
-                            </a>
+                                    <a class="btn btn-primary"
+                                        href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento."
+                                        target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        Solicitar orçamento
+                                    </a>
 
-                            <a class="botao-secundario" href="#projetos">
-                                Conhecer nossos projetos
-                            </a>
+                                    <a class="btn btn-secondary" href="#projetos">
+                                        Ver nossos projetos
+                                    </a>
 
-                        </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- SLIDE 2 -->
+
+                        <article class="slide">
+
+                            <img class="slide-image" src="./assets/img/decoracao-2.jpg"
+                                alt="Decoração colorida para aniversário infantil">
+
+                            <div class="slide-overlay"></div>
+
+                            <div class="container slide-content">
+
+                                <span class="section-tag">
+                                    Praticidade para comemorar
+                                </span>
+
+                                <h2>
+                                    Kits
+                                    <span>Pegue & Monte</span>
+                                </h2>
+
+                                <p>
+                                    Escolha o tema, retire as peças e monte uma
+                                    festa bonita, prática e econômica.
+                                </p>
+
+                                <div class="slide-actions">
+
+                                    <a class="btn btn-primary"
+                                        href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20conhecer%20os%20Kits%20Pegue%20e%20Monte."
+                                        target="_blank" rel="noopener">
+                                        Conhecer os kits
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- SLIDE 3 -->
+
+                        <article class="slide">
+
+                            <img class="slide-image" src="./assets/img/decoracao-3.jpg"
+                                alt="Decoração delicada para chá de bebê">
+
+                            <div class="slide-overlay"></div>
+
+                            <div class="container slide-content">
+
+                                <span class="section-tag">
+                                    Tudo pronto para você
+                                </span>
+
+                                <h2>
+                                    Montagem completa
+                                    <span>do seu evento.</span>
+                                </h2>
+
+                                <p>
+                                    Nossa equipe cuida da decoração para você
+                                    aproveitar cada momento da comemoração.
+                                </p>
+
+                                <div class="slide-actions">
+
+                                    <a class="btn btn-primary" href="#servicos">
+                                        Conhecer os serviços
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
 
                     </div>
 
-                </article>
+
+                    <!-- SETAS DO CARROSSEL -->
+
+                    <button class="carousel-arrow prev carousel-prev" type="button" data-carousel="prev"
+                        aria-label="Imagem anterior">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="carousel-arrow next carousel-next" type="button" data-carousel="next"
+                        aria-label="Próxima imagem">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
 
 
-                <!-- SLIDE 2 -->
+                    <!-- INDICADORES DO CARROSSEL -->
 
-                <article class="slide">
+                    <div class="carousel-dots" aria-label="Selecionar imagem do carrossel">
+                        <button class="carousel-dot dot active" type="button" data-slide="0"
+                            aria-label="Mostrar imagem 1"></button>
 
-                    <img src="./assets/img/decoracao-2.jpg" alt="Kit Pegue e Monte da Portela Decorações">
+                        <button class="carousel-dot dot" type="button" data-slide="1"
+                            aria-label="Mostrar imagem 2"></button>
 
-                    <div class="sombra-slide"></div>
-
-                    <div class="conteudo-slide">
-
-                        <span class="destaque-slide">
-                            Praticidade para sua festa
-                        </span>
-
-                        <h2>
-                            Kits
-                            <strong>Pegue & Monte</strong>
-                        </h2>
-
-                        <p>
-                            Escolha seu tema, retire o kit e monte sua
-                            decoração de maneira prática e econômica.
-                        </p>
-
-                        <a class="botao-principal"
-                            href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20conhecer%20os%20Kits%20Pegue%20e%20Monte."
-                            target="_blank" rel="noopener">
-                            Ver kits disponíveis
-                        </a>
-
+                        <button class="carousel-dot dot" type="button" data-slide="2"
+                            aria-label="Mostrar imagem 3"></button>
                     </div>
 
-                </article>
-
-
-                <!-- SLIDE 3 -->
-
-                <article class="slide">
-
-                    <img src="./assets/img/decoracao-3.jpg" alt="Montagem completa de decoração para festa">
-
-                    <div class="sombra-slide"></div>
-
-                    <div class="conteudo-slide">
-
-                        <span class="destaque-slide">
-                            Para todas as ocasiões
-                        </span>
-
-                        <h2>
-                            Montagem completa
-                            <strong>do seu evento.</strong>
-                        </h2>
-
-                        <p>
-                            Cuidamos da decoração para que você possa
-                            aproveitar cada momento da comemoração.
-                        </p>
-
-                        <a class="botao-principal" href="#servicos">
-                            Conhecer os serviços
-                        </a>
-
-                    </div>
-
-                </article>
-
+                </div>
             </div>
-
-
-            <!-- BOTÕES DO CARROSSEL -->
-
-            <button class="seta-carrossel seta-anterior" id="slideAnterior" type="button" aria-label="Imagem anterior">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <button class="seta-carrossel seta-proximo" id="proximoSlide" type="button" aria-label="Próxima imagem">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
-
-            <!-- INDICADORES -->
-
-            <div class="indicadores-carrossel" aria-label="Selecionar imagem">
-                <button class="indicador ativo" type="button" data-slide="0"
-                    aria-label="Mostrar primeira imagem"></button>
-
-                <button class="indicador" type="button" data-slide="1" aria-label="Mostrar segunda imagem"></button>
-
-                <button class="indicador" type="button" data-slide="2" aria-label="Mostrar terceira imagem"></button>
-            </div>
-
         </section>
 
 
-        <!-- SOBRE A EMPRESA -->
+        <!-- SOBRE -->
 
-        <section class="secao sobre" id="sobre">
+        <section class="section about section-white" id="sobre">
+            <div class="container about-grid">
 
-            <div class="conteudo-sobre">
+                <div class="about-image">
 
-                <div class="imagens-sobre">
-
-                    <img class="imagem-sobre-principal" src="./assets/sobre/decoracao-portela.jpg"
+                    <img src="./assets/sobre/decoracao-portela.jpg"
                         alt="Decoração produzida pela Portela Decorações">
 
-                    <div class="selo-experiencia">
-                        <strong>Desde</strong>
-                        <span>2016</span>
+                    <div class="experience-badge">
+                        <strong>2016</strong>
+                        <span>O começo da nossa história</span>
                     </div>
 
                 </div>
 
 
-                <div class="texto-sobre">
+                <div class="about-content">
 
-                    <span class="titulo-menor">
+                    <span class="section-tag">
                         Sobre a Portela
                     </span>
 
-                    <h2>
-                        Transformamos momentos especiais
-                        em memórias inesquecíveis.
+                    <h2 class="section-title">
+                        Cada festa merece uma decoração especial.
                     </h2>
 
                     <p>
                         A Portela Decorações transforma sonhos em festas
-                        desde 2016, criando ambientes especiais para
-                        diferentes tipos de comemorações.
+                        desde 2016, criando ambientes marcantes para
+                        aniversários, chás, encontros e outras comemorações.
                     </p>
 
                     <p>
-                        Trabalhamos com Kits Pegue & Monte e também com
-                        montagem completa, oferecendo opções práticas e
-                        personalizadas para todas as ocasiões.
+                        Trabalhamos com Kits Pegue & Monte e montagem
+                        completa, oferecendo soluções práticas e
+                        personalizadas para diferentes estilos e ocasiões.
                     </p>
 
 
-                    <div class="diferenciais-sobre">
+                    <ul class="about-features">
 
-                        <div class="diferencial">
-
+                        <li>
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Projetos personalizados
+                        </li>
 
-                            <div>
-                                <strong>Decoração personalizada</strong>
-
-                                <span>
-                                    Cada projeto é pensado de acordo com
-                                    o tema e o estilo da comemoração.
-                                </span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="diferencial">
-
+                        <li>
                             <i class="fa-solid fa-heart"></i>
+                            Feito com carinho
+                        </li>
 
-                            <div>
-                                <strong>Feito com carinho</strong>
+                        <li>
+                            <i class="fa-solid fa-palette"></i>
+                            Diversidade de temas
+                        </li>
 
-                                <span>
-                                    Cuidado e atenção em todos os
-                                    detalhes da sua festa.
-                                </span>
-                            </div>
+                        <li>
+                            <i class="fa-solid fa-comments"></i>
+                            Atendimento próximo
+                        </li>
 
-                        </div>
-
-                    </div>
+                    </ul>
 
 
-                    <a class="link-instagram" href="https://www.instagram.com/portela.decoracoes/" target="_blank"
+                    <a class="btn btn-primary" href="https://www.instagram.com/portela.decoracoes/" target="_blank"
                         rel="noopener">
                         <i class="fa-brands fa-instagram"></i>
-
-                        Acompanhe nossos trabalhos
+                        Acompanhar no Instagram
                     </a>
 
                 </div>
-
             </div>
-
         </section>
 
 
         <!-- SERVIÇOS -->
 
-        <section class="secao servicos" id="servicos">
+        <section class="section services section-pink" id="servicos">
+            <div class="container">
 
-            <div class="cabecalho-secao">
+                <header class="section-header">
 
-                <span class="titulo-menor">
-                    Nossos serviços
+                    <span class="section-tag">
+                        Nossos serviços
+                    </span>
+
+                    <h2 class="section-title">
+                        A opção ideal para cada comemoração
+                    </h2>
+
+                    <p class="section-description">
+                        Escolha a solução que combina com seu evento,
+                        sua rotina e seu orçamento.
+                    </p>
+
+                </header>
+
+
+                <div class="services-grid">
+
+                    <!-- SERVIÇO 1 -->
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+
+                        <h3>Kit Pegue & Monte</h3>
+
+                        <p>
+                            Você retira as peças selecionadas, monta a
+                            decoração no seu espaço e devolve após o evento.
+                        </p>
+
+                        <a href="https://wa.me/5511998115311?text=Olá%2C%20quero%20conhecer%20os%20Kits%20Pegue%20e%20Monte."
+                            target="_blank" rel="noopener">
+                            Consultar kits
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVIÇO 2 -->
+
+                    <article class="service-card service-card-featured">
+
+                        <span class="service-label">
+                            Serviço completo
+                        </span>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+
+                        <h3>Montagem completa</h3>
+
+                        <p>
+                            Nossa equipe planeja, transporta e monta toda
+                            a decoração para deixar seu evento pronto.
+                        </p>
+
+                        <a href="https://wa.me/5511998115311?text=Olá%2C%20quero%20um%20orçamento%20para%20montagem%20completa."
+                            target="_blank" rel="noopener">
+                            Pedir orçamento
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVIÇO 3 -->
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+
+                        <h3>Todas as ocasiões</h3>
+
+                        <p>
+                            Decorações para aniversários, festas infantis,
+                            chás de bebê e outros momentos especiais.
+                        </p>
+
+                        <a href="https://wa.me/5511998115311?text=Olá%2C%20quero%20falar%20sobre%20a%20decoração%20do%20meu%20evento."
+                            target="_blank" rel="noopener">
+                            Falar sobre meu evento
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJETOS -->
+
+        <section class="section projects section-blue" id="projetos">
+            <div class="container">
+
+                <header class="section-header">
+
+                    <span class="section-tag">
+                        Projetos realizados
+                    </span>
+
+                    <h2 class="section-title">
+                        Um pouco do nosso trabalho
+                    </h2>
+
+                    <p class="section-description">
+                        Conheça algumas festas transformadas pela
+                        Portela Decorações.
+                    </p>
+
+                </header>
+
+
+                <div class="projects-grid">
+
+                    <article class="project-card project-card-large">
+
+                        <img src="./assets/projetos/projeto-1.jpg" alt="Decoração infantil colorida">
+
+                        <div class="project-info">
+                            <span>Festa infantil</span>
+                            <h3>Um mundo de cores</h3>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <img src="./assets/projetos/projeto-2.jpg" alt="Decoração delicada em azul">
+
+                        <div class="project-info">
+                            <span>Primeiro aninho</span>
+                            <h3>Delicadeza em cada detalhe</h3>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <img src="./assets/projetos/projeto-3.jpg" alt="Decoração infantil com personagens">
+
+                        <div class="project-info">
+                            <span>Personagens</span>
+                            <h3>Diversão para comemorar</h3>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <img src="./assets/projetos/projeto-4.jpg" alt="Decoração em tons claros e rosa">
+
+                        <div class="project-info">
+                            <span>Tema doce</span>
+                            <h3>Festa leve e encantadora</h3>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card project-card-large">
+
+                        <img src="./assets/projetos/projeto-5.jpg" alt="Decoração de aniversário temática">
+
+                        <div class="project-info">
+                            <span>Aniversário</span>
+                            <h3>Uma celebração inesquecível</h3>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="projects-action">
+
+                    <a class="btn btn-primary" href="https://www.instagram.com/portela.decoracoes/" target="_blank"
+                        rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                        Ver mais projetos
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- LOCALIZAÇÃO -->
+
+        <section class="section location section-white" id="localizacao">
+            <div class="container location-grid">
+
+                <div class="location-info">
+
+                    <div class="location-icon">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+
+                    <span class="section-tag">
+                        Agora com espaço físico
+                    </span>
+
+                    <h2>
+                        Visite a Portela Decorações
+                    </h2>
+
+                    <address>
+                        Rua Simon Bolívar, 118<br>
+                        Parque Imigrantes<br>
+                        São Bernardo do Campo — SP
+                    </address>
+
+                    <a class="btn btn-primary"
+                        href="https://www.google.com/maps/search/?api=1&query=Rua+Simon+Bolivar+118+Parque+Imigrantes+Sao+Bernardo+do+Campo"
+                        target="_blank" rel="noopener">
+                        <i class="fa-solid fa-route"></i>
+                        Abrir no Google Maps
+                    </a>
+
+                </div>
+
+
+                <div class="map-container">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Rua+Simon+Bolivar+118+Parque+Imigrantes+Sao+Bernardo+do+Campo&output=embed"
+                        title="Localização da Portela Decorações" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DÚVIDAS FREQUENTES -->
+
+        <section class="section faq section-pink" id="faq">
+            <div class="container faq-layout">
+
+                <div class="faq-intro">
+
+                    <span class="section-tag">
+                        Dúvidas frequentes
+                    </span>
+
+                    <h2 class="section-title">
+                        Antes de preparar sua festa
+                    </h2>
+
+                    <p class="section-description">
+                        Veja as respostas para algumas perguntas comuns.
+                        Para outras informações, fale conosco pelo WhatsApp.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <article class="faq-item">
+
+                        <button class="faq-question" type="button">
+                            Como funciona o Kit Pegue & Monte?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Você escolhe um kit disponível, combina a
+                                retirada, monta no local da festa e devolve
+                                as peças no prazo acordado.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button class="faq-question" type="button">
+                            A Portela realiza a montagem completa?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Sim. Nossa equipe pode organizar o projeto,
+                                levar as peças e montar a decoração no espaço
+                                do evento.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button class="faq-question" type="button">
+                            Como faço para consultar temas e datas?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Envie a data, o tipo de comemoração e o tema
+                                desejado pelo WhatsApp para verificarmos as
+                                opções disponíveis.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button class="faq-question" type="button">
+                            Onde fica o espaço físico?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Estamos na Rua Simon Bolívar, 118,
+                                Parque Imigrantes, em São Bernardo do Campo.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CHAMADA FINAL -->
+
+        <section class="final-cta">
+
+            <div class="container cta-content">
+
+                <span class="section-tag">
+                    Vamos comemorar?
                 </span>
 
                 <h2>
-                    A decoração ideal para cada comemoração
+                    Seu próximo evento pode começar aqui.
                 </h2>
 
                 <p>
-                    Escolha a opção que mais combina com o seu evento.
+                    Conte sua ideia para a Portela Decorações e consulte
+                    temas, formatos e datas disponíveis.
                 </p>
+
+                <a class="btn btn-light"
+                    href="https://wa.me/5511998115311?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20planejar%20minha%20festa."
+                    target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Conversar pelo WhatsApp
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="site-footer footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a class="brand" href="#inicio">
+
+                    <img src="./assets/img/logo-portela.jpg" alt="Logo Portela Decorações">
+
+                    <span class="brand-text">
+                        Portela
+                        <small>Decorações</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Transformando sonhos em festas desde 2016,
+                    com kits e montagens para todas as ocasiões.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://www.instagram.com/portela.decoracoes/" target="_blank" rel="noopener"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/5511998115311" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Navegação</h3>
+
+                <nav class="footer-links" aria-label="Navegação do rodapé">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#localizacao">Localização</a>
+                    <a href="#faq">Dúvidas</a>
+                </nav>
 
             </div>
 
 
-            <div class="grade-servicos">
+            <div class="footer-column footer-contact-column">
 
-                <!-- SERVIÇO 1 -->
+                <h3>Contato</h3>
 
-                <article class="card-servico">
+                <div class="footer-contact">
 
-                    <div class="icone-servico">
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-
-                    <h3>Kit Pegue & Monte</h3>
-
-                    <p>
-                        Uma opção prática para quem deseja montar a
-                        própria decoração com peças selecionadas e
-                        organizadas pela Portela.
-                    </p>
-
-                    <a href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20conhecer%20os%20Kits%20Pegue%20e%20Monte."
-                        target="_blank" rel="noopener">
-                        Consultar kits
-
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <a href="https://wa.me/5511998115311" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        (11) 99811-5311
                     </a>
 
-                </article>
-
-
-                <!-- SERVIÇO 2 -->
-
-                <article class="card-servico destaque">
-
-                    <div class="etiqueta-card">
-                        Serviço completo
-                    </div>
-
-                    <div class="icone-servico">
-                        <i class="fa-solid fa-champagne-glasses"></i>
-                    </div>
-
-                    <h3>Montagem completa</h3>
-
-                    <p>
-                        Nossa equipe cuida da organização e da montagem
-                        da decoração para deixar tudo pronto para a sua
-                        comemoração.
-                    </p>
-
-                    <a href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20um%20orçamento%20para%20montagem%20completa."
-                        target="_blank" rel="noopener">
-                        Solicitar orçamento
-
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <a href="https://www.instagram.com/portela.decoracoes/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                        @portela.decoracoes
                     </a>
 
-                </article>
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Rua Simon Bolívar, 118 —
+                        Parque Imigrantes, SBC
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
 
 
-                <!-- SERVIÇO 3 -->
+        <div class="container footer-bottom">
 
-                <article class="card-servico">
+            <p>
+                © <span data-current-year>2026</span>
+                Portela Decorações. Todos os direitos reservados.
+            </p>
 
-                    <div class="icone-servico">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
+            <a href="#inicio">
+                Voltar ao início
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
 
-                    <h3>Todas as ocasiões</h3>
+        </div>
+    </footer>
 
-                    <p>
-                        Decorações para aniversários, comemorações,
-                        encontros e diferentes momentos especiais.
-                    </p>
 
-                    <a href="https://wa.me/5511998115311?text=Olá%2C%20gostaria%20de%20uma%20decoração%20para%20meu%20evento."
-                        target="_blank" rel="noopener">
-                        Falar sobre meu evento
+    <!-- WHATSAPP FLUTUANTE -->
 
-                        <i class
+    <a class="whatsapp-float"
+        href="https://wa.me/5511998115311?text=Olá%2C%20vim%20pelo%20site%20da%20Portela%20Decorações." target="_blank"
+        rel="noopener" aria-label="Chamar a Portela Decorações no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
